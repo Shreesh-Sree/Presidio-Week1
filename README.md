@@ -118,8 +118,8 @@ Another challenge was system design scope. It is tempting to add every productio
 - Create a simple API endpoint for analytics.
 - Add dashboard mockups for repository health and review metrics.
 - Track CI checks as another table in the SQL schema.
+- Add real GitHub screenshots after practicing the PR workflow.
 
 ## Key Takeaways
 
 This repo helped me connect fundamentals with actual engineering workflows. It is still a Week-1 project, but I tried to build it like something I would be comfortable showing to a mentor and improving over time.
-
