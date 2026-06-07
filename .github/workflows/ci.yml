@@ -1,0 +1,41 @@
+name: DevInsight CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Validate repository structure
+        run: |
+          test -f README.md
+          test -d github-collaboration
+          test -d dsa/hashmap
+          test -d dsa/recursion
+          test -d sql
+          test -d system-design
+          test -d sdlc
+          test -d learning-journal
+          test -d docs
+
+      - name: Validate Python syntax
+        run: |
+          python -m py_compile dsa/hashmap/log_analyzer.py
+          python -m py_compile dsa/hashmap/contributor_frequency.py
+          python -m py_compile dsa/recursion/folder_analyzer.py
+          python -m py_compile dsa/recursion/dependency_traversal.py
+
+      - name: Success message
+        run: echo "DevInsight-Lab CI checks completed successfully."
+

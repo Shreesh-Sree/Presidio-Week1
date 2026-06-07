@@ -1,0 +1,33 @@
+High-Level DevInsight-Lab Architecture
+======================================
+
+Users
+  -> Edge Layer: DNS / WAF / Load Balancer
+  -> API Gateway
+  -> Dashboard API
+  -> Auth + RBAC
+  -> Redis Cache
+  -> PostgreSQL
+
+GitHub Webhooks
+  -> Webhook Ingestion API
+  -> HMAC Signature Validator
+  -> Raw Event Store
+  -> Redis Streams / Job Queue
+  -> Analytics Workers
+  -> Normalized Tables
+  -> Precomputed Metrics
+  -> Dashboard Cache
+
+Observability
+  -> Structured Logs
+  -> Metrics
+  -> Distributed Traces
+  -> Audit Logs
+
+Availability
+  -> Stateless API Servers across multiple availability zones
+  -> Autoscaled analytics workers
+  -> PostgreSQL primary with read replicas
+  -> Retry queue and dead-letter queue for failed event processing
+
