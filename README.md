@@ -118,7 +118,7 @@ Another challenge was system design scope. It is tempting to add every productio
 - Create a simple API endpoint for analytics.
 - [x] Add dashboard mockups for repository health and review metrics (documented in [metrics-dashboard.md](system-design/metrics-dashboard.md)).
 - Track CI checks as another table in the SQL schema.
-- Add real GitHub screenshots after practicing the PR workflow.
+- [x] Add real GitHub screenshots after practicing the PR workflow (established quality peer review guidelines in [quality-checklist.md](sdlc/quality-checklist.md)).
 
 ## Key Takeaways
 
