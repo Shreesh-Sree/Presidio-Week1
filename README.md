@@ -112,7 +112,7 @@ Another challenge was system design scope. It is tempting to add every productio
 
 ## Future Improvements
 
-- Add unit tests for each Python module.
+- [x] Add unit tests for each Python module (implemented in [dsa_test.py](dsa/dsa_test.py)).
 - [x] Add a small SQLite or PostgreSQL demo script (implemented in [db_demo.py](sql/db_demo.py)).
 - Add SQL linting in CI.
 - Create a simple API endpoint for analytics.
